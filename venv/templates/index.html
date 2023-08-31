@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CryptoInfo - Your Cryptocurrency Information Hub</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='portfolio_style.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script> -->
+</head>
+<body>
+  <header>
+    <h1><i class="fas fa-chart-line"></i> CryptoInfo</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#view-details">View Details</a></li>
+        <li><a href="#real-time-updates">Real-Time Updates</a></li>
+        <li><a href="#crypto-info">Crypto Information</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <div id="log"></div>
+    <section class="top-cryptos">
+      <h2>Top Cryptocurrencies</h2>
+      <ul class="crypto-list">
+        <li>
+          <span><i class="fab fa-bitcoin"></i> Bitcoin (BTC)</span>
+          <button class="view-details-button" data-symbol="bitcoin">View Details</button>
+        </li>
+        <li>
+          <span><i class="fab fa-ethereum"></i> Ethereum (ETH)</span>
+          <button class="view-details-button" data-symbol="tether">View Details</button>
+        </li>
+        <!-- Add more cryptocurrencies here -->
+      </ul>
+    </section>
+    
+    <section class="detailed-info">
+      <div class="info-content">
+        <!-- Detailed Cryptocurrency Information will be populated here -->
+      </div>
+    </section>
+    
+    <section class="real-time-updates">
+      <h2>Real-Time Price Updates</h2>
+      <ul class="updates-list">
+        <!-- Real-Time Price Updates will be populated here -->
+      </ul>
+    </section>
+    
+    <section class="crypto-info">
+      <div class="info-content">
+        <!-- Crypto Information content will be populated here -->
+      </div>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='portfolio_script.js') }}"></script>
+</body>
+</html>
