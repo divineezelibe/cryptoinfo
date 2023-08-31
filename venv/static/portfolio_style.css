@@ -1,0 +1,261 @@
+/* Reset some default styling */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Basic styling for the page */
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 1.5rem;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ff9500;
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  h2, h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: #0056b3;
+  }
+  
+  /* Additional styling for specific sections and components */
+  
+  /* Top Cryptocurrencies */
+  .top-cryptos {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+  }
+  
+  .top-cryptos ul {
+    list-style: none;
+  }
+  
+  .top-cryptos li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .top-cryptos li span {
+    font-size: 1.3rem;
+  }
+  
+  /* Detailed Cryptocurrency Information */
+  .detailed-info {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+  }
+  
+  .detailed-info h3 {
+    color: #ff9500;
+  }
+  
+  .detailed-info p {
+    margin-bottom: 0.8rem;
+  }
+  
+  .detailed-info a {
+    display: inline-block;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  .detailed-info a:hover {
+    color: #0056b3;
+  }
+  
+  /* Real-Time Price Updates */
+  .real-time-updates {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+  }
+  
+  .real-time-updates ul {
+    list-style: none;
+  }
+  
+  .real-time-updates li {
+    
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .real-time-updates li span {
+    font-size: 1.3rem;
+  }
+  
+  /* Crypto Information */
+  .crypto-info {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+  }
+  
+  .crypto-info h2 {
+    color: #ff9500;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    header {
+      padding: 0.8rem;
+    }
+  
+    nav li {
+      margin-right: 1rem;
+    }
+  
+    main {
+      padding: 0 1rem;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    h2, h3 {
+      font-size: 1.5rem;
+    }
+  
+    p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+  
+    .top-cryptos, .detailed-info, .real-time-updates, .crypto-info {
+      padding: 1.5rem;
+    }
+  }
+  
+
+  /* ... (previous styles) ... */
+
+/* Additions for more colorful and artistic design */
+body {
+    background-color: #f9f9f9;
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  header {
+    background-color: #3a506b;
+    color: #fff;
+  }
+  
+  nav a {
+    color: #ecf0f1;
+  }
+  
+  main {
+    background-color: #f2f5f7;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 30px;
+  }
+  
+  section h2 {
+    color: #3498db;
+  }
+  
+  .crypto-list li span i {
+    font-size: 2rem;
+    margin-right: 0.8rem;
+    color: #3498db;
+  }
+  
+  .view-details-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .view-details-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .updates-list li i {
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
+  }
+  
+  /* ... (responsive styles) ... */
+  
